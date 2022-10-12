@@ -1,4 +1,5 @@
 ﻿#region Assignment
+Console.WriteLine("hello sussy");
 Console.WriteLine("hello Mihnea");
 Console.ReadLine();
 //Create a CarDealer program
