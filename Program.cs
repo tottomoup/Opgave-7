@@ -1,5 +1,6 @@
 ﻿#region Assignment
-
+Console.WriteLine("hello world");
+Console.ReadLine();
 //Create a CarDealer program
 //Minimum requirements:
 //The CarDealer must have a list of available cars for sale
@@ -17,9 +18,9 @@
 
 
 // Suggestion to get started on user interaction in the console
-/*
 
-CarDealer dealer = new CarDealer(); //This class you need to create yourself!
+
+//CarDealer dealer = new CarDealer(); //This class you need to create yourself!
 while(true){
 
     Console.WriteLine("Write an action [buy, sell, exit]");
@@ -38,5 +39,5 @@ while(true){
             return;
     }
 }
-*/
+
 #endregion
