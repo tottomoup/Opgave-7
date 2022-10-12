@@ -1,5 +1,5 @@
 ﻿#region Assignment
-Console.WriteLine("hello world");
+Console.WriteLine("hello Mihnea");
 Console.ReadLine();
 //Create a CarDealer program
 //Minimum requirements:
