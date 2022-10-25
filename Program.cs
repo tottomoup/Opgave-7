@@ -5,27 +5,28 @@ Console.WriteLine("Welcome to A Literal Dealership");
 Console.ReadLine();
 
 //Do you need help loop
+while (true)
+{
+    
 Console.WriteLine("Do you need any help?");
 
 string answer = Console.ReadLine();
 
-bool help_needed = false;
 if (answer == "yes")
 {
-    help_needed = true;
-}
-
-if (help_needed == true)
-{
-
-    bool need_help = true;
-
-while (need_help)
-{
-    Console.WriteLine("Perfect, ill be with you rigt away");
     break;
 }
+
+if (answer == "no")
+{
+
+
+    Thread.Sleep(10000);
 }
+}
+
+    Console.WriteLine("Perfect, ill be with you right away");
+
 Console.ReadLine();
 
 //Create a CarDealer program
