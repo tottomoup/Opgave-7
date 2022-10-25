@@ -4,6 +4,8 @@ Thread.Sleep(500);
 Console.WriteLine("Welcome to A Literal Dealership");
 Console.ReadLine();
 
+Car toyota_01 = new Car();
+
 //Do you need help loop
 while (true)
 {
