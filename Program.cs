@@ -1,7 +1,33 @@
 ﻿#region Assignment
 Console.WriteLine("hello sussy");
-Console.WriteLine("hello Mihnea");
+Thread.Sleep(500);
+Console.WriteLine("Welcome to A Literal Dealership");
 Console.ReadLine();
+
+//Do you need help loop
+Console.WriteLine("Do you need any help?");
+
+string answer = Console.ReadLine();
+
+bool help_needed = false;
+if (answer == "yes")
+{
+    help_needed = true;
+}
+
+if (help_needed == true)
+{
+
+    bool need_help = true;
+
+while (need_help)
+{
+    Console.WriteLine("Perfect, ill be with you rigt away");
+    break;
+}
+}
+Console.ReadLine();
+
 //Create a CarDealer program
 //Minimum requirements:
 //The CarDealer must have a list of available cars for sale
