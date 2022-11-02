@@ -8,6 +8,7 @@ void Text(string text, int time = 50)
     }
 }
 Text ("Welcome to A Literal Dealership");
+Console.WriteLine("");
 Console.ReadLine();
 
 Car toyota_01 = new Car();
@@ -17,7 +18,7 @@ while (true)
 {
     
 Text ("Do you need any help?");
-
+Console.WriteLine("");
 string answer = Console.ReadLine();
 
 if (answer == "yes")
@@ -27,14 +28,12 @@ if (answer == "yes")
 
 if (answer == "no")
 {
-
-
     Thread.Sleep(10000);
 }
 }
 
     Text ("Perfect, ill be with you right away");
-
+Console.WriteLine("");
 Console.ReadLine();
 
 //Create a CarDealer program
