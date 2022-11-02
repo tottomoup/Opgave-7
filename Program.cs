@@ -8,6 +8,23 @@ Console.WriteLine(myObj1.color);
 Console.WriteLine(myObj2.color);
 
 
+
+// List of string
+List<string> authors = new List<string>();
+authors.Add("Toyota Igo");
+authors.Add("Mercedes Dense");
+authors.Add("Porse Pan");
+authors.Add("Mini Maxi");
+authors.Add("Niisan GTS");
+authors.Add("FolkeVogn");
+authors.Add("Ford Poney");
+
+Console.WriteLine("Count: " + authors.Count);
+Console.WriteLine("Capacity: " + authors.Capacity);
+
+foreach (string a in authors)
+    Console.WriteLine(a);
+
 Console.ReadLine();
 
 /*
