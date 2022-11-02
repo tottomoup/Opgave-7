@@ -1,7 +1,7 @@
 public class Car{
 
-    public void Accelerate(){
-        //
-    }
+
+  public string color = "red";
+
 
 }

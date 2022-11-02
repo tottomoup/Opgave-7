@@ -1,4 +1,17 @@
 ﻿#region Assignment
+
+new Car();
+
+Car myObj1 = new Car();
+Car myObj2 = new Car();
+Console.WriteLine(myObj1.color);
+Console.WriteLine(myObj2.color);
+
+
+Console.ReadLine();
+
+/*
+
 void Text(string text, int time = 50)
 {
     foreach (char c in text)
@@ -78,5 +91,5 @@ while(true){
             return;
     }
 }
-
+*/
 #endregion
