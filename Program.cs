@@ -1,8 +1,14 @@
 ﻿#region Assignment
-Console.WriteLine("hello sussy");
-Thread.Sleep(500);
-Console.WriteLine("Welcome to A Literal Dealership");
-Console.ReadLine();
+void Text(string text, int time = 50)
+{
+    foreach (char c in text)
+    {
+        Console.Write(c);
+        Thread.Sleep(time);
+    }
+}
+Text ("Welcome to A Literal Dealership");
+Console.WriteLine("");
 
 Car toyota_01 = new Car();
 
@@ -10,8 +16,8 @@ Car toyota_01 = new Car();
 while (true)
 {
     
-Console.WriteLine("Do you need any help?");
-
+Text ("Do you need any help?");
+Console.WriteLine("");
 string answer = Console.ReadLine();
 
 if (answer == "yes")
@@ -21,15 +27,18 @@ if (answer == "yes")
 
 if (answer == "no")
 {
-
-
-    Thread.Sleep(10000);
+    Thread.Sleep(5000);
 }
 }
 
-    Console.WriteLine("Perfect, ill be with you right away");
+    Text ("Perfect, ill be with you right away");
+Console.WriteLine("");
 
+Thread.Sleep(3000);
+Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Opel and Mercedes");
+Console.WriteLine("");
 Console.ReadLine();
+
 
 //Create a CarDealer program
 //Minimum requirements:
