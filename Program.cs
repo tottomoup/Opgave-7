@@ -36,14 +36,6 @@ Console.WriteLine("");
 
 Thread.Sleep(3000);
 
-Text ("Do you want to buy or sell a car?");
-Console.WriteLine();
-string buyorsell = Console.ReadLine();
-
-if (buyorsell == "buy"){
-new Buy();
-}
-
 Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Opel and Mercedes");
 Console.WriteLine("");
 Console.ReadLine();
