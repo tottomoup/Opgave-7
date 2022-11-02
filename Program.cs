@@ -9,7 +9,6 @@ void Text(string text, int time = 50)
 }
 Text ("Welcome to A Literal Dealership");
 Console.WriteLine("");
-Console.ReadLine();
 
 Car toyota_01 = new Car();
 
@@ -28,13 +27,18 @@ if (answer == "yes")
 
 if (answer == "no")
 {
-    Thread.Sleep(10000);
+    Thread.Sleep(5000);
 }
 }
 
     Text ("Perfect, ill be with you right away");
 Console.WriteLine("");
+
+Thread.Sleep(3000);
+Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Opel and Mercedes");
+Console.WriteLine("");
 Console.ReadLine();
+
 
 //Create a CarDealer program
 //Minimum requirements:
