@@ -1,89 +1,30 @@
 ﻿#region Assignment
 
-
-//En anden måde at lave clasess på
-/*
-    Car car1 = new Car();
-    car1.model = "Ford";
-    car1.color = "Yellow";
-    car1.year = 2005;
-
-    Console.WriteLine(car1.model);
-
-    Console.ReadLine();
-*/
-
-
-
+#region Constructer and liste
 //Constructors example (den vi går videre med)
-    Car Ford = new Car("Mustang", "Red", 1969);
-    Console.WriteLine(Ford.color + " " + Ford.year + " " + Ford.model);
+    Car car1 = new Car("Mustang", "Red", 1969);
+    Car car2 = new Car("Farari", "Red", 2018);
+    Car car3 = new Car(" ", " ", 0);
+    Car car4 = new Car(" ", " ", 0);
+    Car car5 = new Car(" ", " ", 0);
 
-    Console.ReadLine();
-// Outputs Red 1969 Mustang
+//Placere informationerne i en liste 
+List<string> cars = new List<string>();
+cars.Add((car1.model + " " + car1.year + " " + car1.color));
+cars.Add((car2.model + " " + car2.year + " " + car2.color));
+cars.Add((car3.model + " " + car3.year + " " + car3.color));
+cars.Add((car4.model + " " + car4.year + " " + car4.color));
+cars.Add((car5.model + " " + car5.year + " " + car5.color));
 
+Console.WriteLine("Count: " + cars.Count);
+//Console.WriteLine("Capacity: " + cars.Capacity);
 
-
-//objekt test
-/*
-new Car();
-
-Car myObj1 = new Car();
-Car myObj2 = new Car();
-Console.WriteLine(myObj1.color);
-Console.WriteLine(myObj2.color);
-*/
-
-//Class with no construcktor
-/*
-class Car 
-{
-  string model;
-  string color;
-  int year;
-
-  static void Main(string[] args)
-  {
-    Car Ford = new Car();
-    Ford.model = "Mustang";
-    Ford.color = "red";
-    Ford.year = 1969;
-
-    Car Opel = new Car();
-    Opel.model = "Astra";
-    Opel.color = "white";
-    Opel.year = 2005;
-
-    Console.WriteLine(Ford.model +" "+ Ford.color +" "+ Ford.year);
-    Console.WriteLine(Opel.model);
-
-Console.ReadLine();
-
-  }
-  
-}
-*/
-
-// List of string
-/*
-List<string> authors = new List<string>();
-authors.Add("Toyota Igo");
-authors.Add("Mercedes Dense");
-authors.Add("Porse Pan");
-authors.Add("Mini Maxi");
-authors.Add("Niisan GTS");
-authors.Add("FolkeVogn");
-authors.Add("Ford Poney");
-
-Console.WriteLine("Count: " + authors.Count);
-Console.WriteLine("Capacity: " + authors.Capacity);
-
-foreach (string a in authors)
+foreach (string a in cars)
     Console.WriteLine(a);
 
 Console.ReadLine();
 
-*/
+#endregion
 
 //Main historie
 /*
