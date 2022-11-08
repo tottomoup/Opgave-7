@@ -1,4 +1,7 @@
 ﻿#region Assignment
+
+
+
 void Text(string text, int time = 50)
 {
     foreach (char c in text)
@@ -9,8 +12,6 @@ void Text(string text, int time = 50)
 }
 Text ("Welcome to A Literal Dealership");
 Console.WriteLine("");
-
-Car toyota_01 = new Car();
 
 //Do you need help loop
 while (true)
@@ -40,7 +41,13 @@ Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Ope
 Console.WriteLine("");
 Console.ReadLine();
 
-new Car();
+Car Car1 = new Car("Volkswagen","Blue", 2023);
+
+
+Text ("Great choice, what kind of 'TheAnswer' would you like to see?");
+Console.WriteLine("");
+Console.ReadLine();
+
 //Create a CarDealer program
 //Minimum requirements:
 //The CarDealer must have a list of available cars for sale
