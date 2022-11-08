@@ -1,15 +1,71 @@
 ﻿#region Assignment
 
+
+//En anden måde at lave clasess på
+/*
+    Car car1 = new Car();
+    car1.model = "Ford";
+    car1.color = "Yellow";
+    car1.year = 2005;
+
+    Console.WriteLine(car1.model);
+
+    Console.ReadLine();
+*/
+
+
+
+//Constructors example (den vi går videre med)
+    Car Ford = new Car("Mustang", "Red", 1969);
+    Console.WriteLine(Ford.color + " " + Ford.year + " " + Ford.model);
+
+    Console.ReadLine();
+// Outputs Red 1969 Mustang
+
+
+
+//objekt test
+/*
 new Car();
 
 Car myObj1 = new Car();
 Car myObj2 = new Car();
 Console.WriteLine(myObj1.color);
 Console.WriteLine(myObj2.color);
+*/
 
+//Class with no construcktor
+/*
+class Car 
+{
+  string model;
+  string color;
+  int year;
 
+  static void Main(string[] args)
+  {
+    Car Ford = new Car();
+    Ford.model = "Mustang";
+    Ford.color = "red";
+    Ford.year = 1969;
+
+    Car Opel = new Car();
+    Opel.model = "Astra";
+    Opel.color = "white";
+    Opel.year = 2005;
+
+    Console.WriteLine(Ford.model +" "+ Ford.color +" "+ Ford.year);
+    Console.WriteLine(Opel.model);
+
+Console.ReadLine();
+
+  }
+  
+}
+*/
 
 // List of string
+/*
 List<string> authors = new List<string>();
 authors.Add("Toyota Igo");
 authors.Add("Mercedes Dense");
@@ -27,6 +83,9 @@ foreach (string a in authors)
 
 Console.ReadLine();
 
+*/
+
+//Main historie
 /*
 
 void Text(string text, int time = 50)
