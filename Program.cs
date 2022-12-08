@@ -44,7 +44,7 @@ Console.ReadLine();
 Car Car1 = new Car("Volkswagen","Blue", 2023);
 
 
-Text ("Great choice, what kind of 'TheAnswer' would you like to see?");
+Text (Car1 + " great choice, would you like to see?");
 Console.WriteLine("");
 Console.ReadLine();
 
