@@ -42,8 +42,9 @@ if (answer == "no")
 
 Thread.Sleep(3000);
 
+Console.WriteLine("\n");
 Text ("What car are you intrested in, we got:");
-Console.WriteLine(".");
+Console.WriteLine(" ");
 
 
     Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
@@ -55,19 +56,19 @@ Console.WriteLine(".");
 
 //Placere informationerne i en liste 
 List<string> cars = new List<string>();
-cars.Add((car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
-cars.Add((car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
-cars.Add((car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
-cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
-cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
-cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
+cars.Add(("\n" + car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
+cars.Add(("\n" + car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
+cars.Add(("\n" + car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
+cars.Add(("\n" + car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
+cars.Add(("\n" + car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
+cars.Add(("\n" + car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
 
 //How many cars are in the list
 //Console.WriteLine("Count: " + cars.Count);
 
 //Console.WriteLine("Capacity: " + cars.Capacity);
 foreach (string a in cars)
-    Console.WriteLine(a);
+    Text(a);
 
 Console.ReadLine();
 
