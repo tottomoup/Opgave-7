@@ -1,5 +1,6 @@
 ﻿#region Assignment
 
+
 #region Constructer and liste
 //Constructors example (den vi går videre med)
 
