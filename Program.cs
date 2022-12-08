@@ -2,27 +2,6 @@
 
 #region Constructer and liste
 //Constructors example (den vi går videre med)
-    Car car1 = new Car("Mustang", "Red", 1969);
-    Car car2 = new Car("Farari", "Red", 2018);
-    Car car3 = new Car(" ", " ", 0);
-    Car car4 = new Car(" ", " ", 0);
-    Car car5 = new Car(" ", " ", 0);
-
-//Placere informationerne i en liste 
-List<string> cars = new List<string>();
-cars.Add((car1.model + " " + car1.year + " " + car1.color));
-cars.Add((car2.model + " " + car2.year + " " + car2.color));
-cars.Add((car3.model + " " + car3.year + " " + car3.color));
-cars.Add((car4.model + " " + car4.year + " " + car4.color));
-cars.Add((car5.model + " " + car5.year + " " + car5.color));
-
-Console.WriteLine("Count: " + cars.Count);
-//Console.WriteLine("Capacity: " + cars.Capacity);
-
-foreach (string a in cars)
-    Console.WriteLine(a);
-
-Console.ReadLine();
 
 #endregion
 
@@ -68,12 +47,30 @@ Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Ope
 Console.WriteLine("");
 Console.ReadLine();
 
-Car Car1 = new Car("Volkswagen","Blue", 2023);
+    Car car1 = new Car("Volkswagen","Blue", 2023, 1265738);
+    Car car2 = new Car("Opel", "Yellow", 2019, 3454675);
+    Car car3 = new Car("Porsche", "Red", 2022, 4356789);
+    Car car4 = new Car("BMW", "MattBlack", 2023, 456789);
+    Car car5 = new Car("Mercedes", "White", 2021, 735287);
+    Car car6 = new Car("Audi", "Black", 2020, 74926592);
 
+//Placere informationerne i en liste 
+List<string> cars = new List<string>();
+cars.Add((car1.model + " " + car1.year + " " + car1.color + " " + car1.price));
+cars.Add((car2.model + " " + car2.year + " " + car2.color + " " + car2.price));
+cars.Add((car3.model + " " + car3.year + " " + car3.color + " " + car3.price));
+cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price));
+cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price));
+cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price));
 
-Text (Car1 + " great choice, would you like to see?");
-Console.WriteLine("");
+Console.WriteLine("Count: " + cars.Count);
+//Console.WriteLine("Capacity: " + cars.Capacity);
+
+foreach (string a in cars)
+    Console.WriteLine(a);
+
 Console.ReadLine();
+
 
 //Create a CarDealer program
 //Minimum requirements:
@@ -95,25 +92,25 @@ Console.ReadLine();
 
 
 //CarDealer dealer = new CarDealer(); //This class you need to create yourself!
-while(true){
+//while(true){
 
-    Console.WriteLine("Write an action [buy, sell, exit]");
-    string input = Console.ReadLine();
+  //Console.WriteLine("Write an action [buy, sell, exit]");
+    //string input = Console.ReadLine();
 
-    switch (input)
-    {
-        case "buy":
+    //switch (input)
+    //{
+        //case "buy":
             //Car myNewCar = dealer.buy(...);
-            break;
-        case "sell":
-            break;
-        case "exit":
-            return;
-        default:
-            return;
-    }
-}
-*/
+            //break;
+        //case "sell":
+            //break;
+        //case "exit":
+            //return;
+        //default:
+            //return;
+    //}
+//}
+/*/
 #endregion
             return;
         default:
