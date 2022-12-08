@@ -39,13 +39,12 @@ if (answer == "no")
 }
 
     Text ("Perfect, ill be with you right away");
-Console.WriteLine("");
 
 Thread.Sleep(3000);
 
-Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Opel and Mercedes");
-Console.WriteLine("");
-Console.ReadLine();
+Text ("What car are you intrested in, we got:");
+Console.WriteLine(".");
+
 
     Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
     Car car2 = new Car("Opel", "Yellow", 2019, 154675);
@@ -63,9 +62,10 @@ cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "
 cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
 cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
 
-Console.WriteLine("Count: " + cars.Count);
-//Console.WriteLine("Capacity: " + cars.Capacity);
+//How many cars are in the list
+//Console.WriteLine("Count: " + cars.Count);
 
+//Console.WriteLine("Capacity: " + cars.Capacity);
 foreach (string a in cars)
     Console.WriteLine(a);
 
