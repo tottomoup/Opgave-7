@@ -47,21 +47,21 @@ Text ("What car are you intrested in, we got BMW, Audi, Volkswagen, Porsche, Ope
 Console.WriteLine("");
 Console.ReadLine();
 
-    Car car1 = new Car("Volkswagen","Blue", 2023, 1265738);
-    Car car2 = new Car("Opel", "Yellow", 2019, 3454675);
-    Car car3 = new Car("Porsche", "Red", 2022, 4356789);
+    Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
+    Car car2 = new Car("Opel", "Yellow", 2019, 154675);
+    Car car3 = new Car("Porsche", "Red", 2022, 1356789);
     Car car4 = new Car("BMW", "MattBlack", 2023, 456789);
-    Car car5 = new Car("Mercedes", "White", 2021, 735287);
-    Car car6 = new Car("Audi", "Black", 2020, 74926592);
+    Car car5 = new Car("Mercedes", "White", 2021, 335287);
+    Car car6 = new Car("Audi", "Black", 2020, 230605);
 
 //Placere informationerne i en liste 
 List<string> cars = new List<string>();
-cars.Add((car1.model + " " + car1.year + " " + car1.color + " " + car1.price));
-cars.Add((car2.model + " " + car2.year + " " + car2.color + " " + car2.price));
-cars.Add((car3.model + " " + car3.year + " " + car3.color + " " + car3.price));
-cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price));
-cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price));
-cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price));
+cars.Add((car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
+cars.Add((car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
+cars.Add((car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
+cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
+cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
+cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
 
 Console.WriteLine("Count: " + cars.Count);
 //Console.WriteLine("Capacity: " + cars.Capacity);
