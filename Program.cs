@@ -1,4 +1,34 @@
 ﻿#region Assignment
+
+#region Constructer and liste
+//Constructors example (den vi går videre med)
+    Car car1 = new Car("Mustang", "Red", 1969);
+    Car car2 = new Car("Farari", "Red", 2018);
+    Car car3 = new Car(" ", " ", 0);
+    Car car4 = new Car(" ", " ", 0);
+    Car car5 = new Car(" ", " ", 0);
+
+//Placere informationerne i en liste 
+List<string> cars = new List<string>();
+cars.Add((car1.model + " " + car1.year + " " + car1.color));
+cars.Add((car2.model + " " + car2.year + " " + car2.color));
+cars.Add((car3.model + " " + car3.year + " " + car3.color));
+cars.Add((car4.model + " " + car4.year + " " + car4.color));
+cars.Add((car5.model + " " + car5.year + " " + car5.color));
+
+Console.WriteLine("Count: " + cars.Count);
+//Console.WriteLine("Capacity: " + cars.Capacity);
+
+foreach (string a in cars)
+    Console.WriteLine(a);
+
+Console.ReadLine();
+
+#endregion
+
+
+
+//Main historie
 void Text(string text, int time = 50)
 {
     foreach (char c in text)
