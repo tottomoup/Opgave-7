@@ -7,6 +7,8 @@
 
 
 
+
+
 //Main historie
 void Text(string text, int time = 50)
 {
@@ -46,7 +48,16 @@ Console.WriteLine("\n");
 Text ("What car are you intrested in, we got:");
 Console.WriteLine(" ");
 
+CarDealer BenDover = new CarDealer();
+BenDover.ShowCars();
 
+//prøver at lave en metode for hvordan brugeren kan vælge bilen
+String IdCar = Console.ReadLine();
+IdCar = Convert.ToInt32(Console.ReadLine());
+BenDover.BuyCar(3);
+
+
+/*
     Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
     Car car2 = new Car("Opel", "Yellow", 2019, 154675);
     Car car3 = new Car("Porsche", "Red", 2022, 1356789);
@@ -63,6 +74,7 @@ cars.Add(("\n" + car4.model + " " + car4.year + " " + car4.color + " " + car4.pr
 cars.Add(("\n" + car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
 cars.Add(("\n" + car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
 
+
 //How many cars are in the list
 //Console.WriteLine("Count: " + cars.Count);
 
@@ -71,7 +83,7 @@ foreach (string a in cars)
     Text(a);
 
 Console.ReadLine();
-
+*/
 
 //Create a CarDealer program
 //Minimum requirements:
@@ -119,4 +131,5 @@ Console.ReadLine();
     }
 }
 */
+Console.ReadLine();
 #endregion

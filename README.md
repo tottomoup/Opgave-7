@@ -11,7 +11,7 @@ HUSK: Hvis man er i tvivl om det man gør er rigtigt, så kan man altid lave man
 
 Create a CarDealer program
 Minimum requirements:
-The CarDealer must have a list of available cars for sale
+    The CarDealer must have a list of available cars for sale
 The CarDealer must have public Buy/Sell methods
 These methods must be accessible via console input/output
 These methods must change the car dealers available cars
