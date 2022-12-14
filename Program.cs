@@ -56,12 +56,12 @@ Console.WriteLine(".");
 
 //Placere informationerne i en liste 
 List<string> cars = new List<string>();
-cars.Add((car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
-cars.Add((car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
-cars.Add((car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
-cars.Add((car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
-cars.Add((car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
-cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
+cars.Add(("1." + car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
+cars.Add(("2." + car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
+cars.Add(("3." + car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
+cars.Add(("4." + car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
+cars.Add(("5." + car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
+cars.Add(("6." + car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
 
 //How many cars are in the list
 //Console.WriteLine("Count: " + cars.Count);
@@ -70,6 +70,9 @@ cars.Add((car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "
 foreach (string a in cars)
     Console.WriteLine(a);
 
+Console.ReadLine();
+Text ("What number are you intrested in?");
+Console.WriteLine(" ");
 Console.ReadLine();
 
 
