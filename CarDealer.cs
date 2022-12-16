@@ -21,14 +21,17 @@ public class CarDealer
         availebleCars.Add(car6);
     }
 
-    public Car BuyCar(int id){
+    public Car BuyCar(int id)
+    {
         Car specificCar = availebleCars[id];
         availebleCars.RemoveAt(id);
         return specificCar;
     }
 
-    public void ShowCars(){
-        foreach(Car carinshop in availebleCars){
+    public void ShowCars()
+    {
+        foreach (Car carinshop in availebleCars)
+        {
             carinshop.ShowCar();
         }
     }

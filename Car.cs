@@ -15,8 +15,9 @@ public class Car
         price = modelPrice;
     }
 
-    public void ShowCar(){
-      Console.WriteLine("Car " + model + ", " + color + ", " + year + ", " + price);
+    public void ShowCar()
+    {
+        Console.WriteLine("Car " + model + ", " + color + ", " + year + ", " + price);
     }
 }
 
