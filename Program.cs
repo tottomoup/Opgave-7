@@ -38,3 +38,5 @@ while (true)
     if(BuyOrSell == "sell"){
         Sell s = new Sell();
     }
+
+    //Tobias is boss
