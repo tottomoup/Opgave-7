@@ -26,15 +26,5 @@ Car Selected = BenDover.BuyCar(CarId);
 Selected.ShowCar();
 
 Console.ReadLine();
-    Text ("Do you want to Buy or Sell?");
-    Console.WriteLine(" ");
-    string BuyOrSell = Console.ReadLine();
-    if(BuyOrSell == "Buy"){
-        Buy b = new Buy();
-    }
-    if(BuyOrSell == "Sell"){
-        Sell s = new Sell();
-    }
-
    }
 }

@@ -13,7 +13,6 @@ Console.WriteLine("");
 //Do you need help loop
 while (true)
 {
-
     Text("Do you need any help?");
     Console.WriteLine("");
     string answer = Console.ReadLine();
@@ -28,3 +27,14 @@ while (true)
         Thread.Sleep(5000);
     }
 }
+
+//Buy or cell
+    Text ("Do you want to buy or sell?");
+    Console.WriteLine(" ");
+    string BuyOrSell = Console.ReadLine();
+    if(BuyOrSell == "buy"){
+        Buy b = new Buy();
+    }
+    if(BuyOrSell == "sell"){
+        Sell s = new Sell();
+    }
