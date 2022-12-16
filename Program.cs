@@ -9,7 +9,8 @@ void Text(string text, int time = 1) // change to 50
 }
 Text("Welcome to A Literal Dealership");
 Console.WriteLine("");
-
+Sell asd = new Sell();
+asd.SellCar
 //Do you need help loop
 while (true)
 {
