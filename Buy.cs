@@ -15,33 +15,26 @@ Console.WriteLine(" ");
 Text ("What car are you intrested in, we got:");
 Console.WriteLine(".");
 
+CarDealer BenDover = new CarDealer();
+BenDover.ShowCars();
 
-    Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
-    Car car2 = new Car("Opel", "Yellow", 2019, 154675);
-    Car car3 = new Car("Porsche", "Red", 2022, 1356789);
-    Car car4 = new Car("BMW", "MattBlack", 2023, 456789);
-    Car car5 = new Car("Mercedes", "White", 2021, 335287);
-    Car car6 = new Car("Audi", "Black", 2020, 230605);
+//Choose a car
+String IdCar = Console.ReadLine();
+int CarId = Convert.ToInt32(IdCar) - 1;
+Car Selected = BenDover.BuyCar(CarId);
 
-//Placere informationerne i en liste 
-List<string> cars = new List<string>();
-cars.Add(("1." + car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
-cars.Add(("2." + car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
-cars.Add(("3." + car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
-cars.Add(("4." + car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
-cars.Add(("5." + car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
-cars.Add(("6." + car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
-
-//How many cars are in the list
-//Console.WriteLine("Count: " + cars.Count);
-
-//Console.WriteLine("Capacity: " + cars.Capacity);
-foreach (string a in cars)
-    Console.WriteLine(a);
+Selected.ShowCar();
 
 Console.ReadLine();
-Text ("What number are you intrested in?");
-Console.WriteLine(" ");
-Console.ReadLine();
-   } 
+    Text ("Do you want to Buy or Sell?");
+    Console.WriteLine(" ");
+    string BuyOrSell = Console.ReadLine();
+    if(BuyOrSell == "Buy"){
+        Buy b = new Buy();
+    }
+    if(BuyOrSell == "Sell"){
+        Sell s = new Sell();
+    }
+
+   }
 }
