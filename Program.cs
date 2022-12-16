@@ -1,5 +1,5 @@
 ﻿//Main historie
-void Text(string text, int time = 50)
+void Text(string text, int time = 1) // change to 50
 {
     foreach (char c in text)
     {
@@ -49,3 +49,14 @@ Car Selected = BenDover.BuyCar(CarId);
 Selected.ShowCar();
 
 Console.ReadLine();
+}
+    Text ("Do you want to Buy or Sell?");
+    Console.WriteLine(" ");
+    string BuyOrSell = Console.ReadLine();
+    if(BuyOrSell == "Buy"){
+        Buy b = new Buy();
+    }
+    if(BuyOrSell == "Sell"){
+        Sell s = new Sell();
+    }
+#endregion
