@@ -28,13 +28,18 @@ while (true)
     }
 }
 
-//Buy or cell
+//Buy or sell
+while (true)
+{
     Text ("Do you want to buy or sell?");
     Console.WriteLine(" ");
     string BuyOrSell = Console.ReadLine();
     if(BuyOrSell == "buy"){
         Buy b = new Buy();
+        break;
     }
     if(BuyOrSell == "sell"){
         Sell s = new Sell();
+        break;
     }
+}
