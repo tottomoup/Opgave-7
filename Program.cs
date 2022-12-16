@@ -1,15 +1,4 @@
-﻿#region Assignment
-
-#region Constructer and liste
-//Constructors example (den vi går videre med)
-
-#endregion
-
-
-
-
-
-//Main historie
+﻿//Main historie
 void Text(string text, int time = 50)
 {
     foreach (char c in text)
@@ -44,6 +33,7 @@ Text("Perfect, ill be with you right away");
 
 Thread.Sleep(3000);
 
+//List of cars and CarDealer class
 Console.WriteLine("\n");
 Text("What car are you intrested in, we got:");
 Console.WriteLine(" ");
@@ -51,12 +41,11 @@ Console.WriteLine(" ");
 CarDealer BenDover = new CarDealer();
 BenDover.ShowCars();
 
-//prøver at lave en metode for hvordan brugeren kan vælge bilen
+//Choose a car
 String IdCar = Console.ReadLine();
 int CarId = Convert.ToInt32(IdCar) - 1;
-Car Noget = BenDover.BuyCar(CarId);
+Car Selected = BenDover.BuyCar(CarId);
 
-Noget.ShowCar();
+Selected.ShowCar();
 
 Console.ReadLine();
-#endregion

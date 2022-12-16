@@ -32,6 +32,9 @@ Formålet med opgaven er at sikre i har en god forståelse for hvordan Gitkraken
 //Noter
 //Noter
 
+#region Constructer and liste
+//Constructors example (den vi går videre med)
+
 //Classes Det mr. Big Man lavede
 public class Car
 {
@@ -129,3 +132,31 @@ foreach (string a in authors)
 
 Console.ReadLine();
 
+    Car car1 = new Car("Volkswagen","Blue", 2023, 476538);
+    Car car2 = new Car("Opel", "Yellow", 2019, 154675);
+    Car car3 = new Car("Porsche", "Red", 2022, 1356789);
+    Car car4 = new Car("BMW", "MattBlack", 2023, 456789);
+    Car car5 = new Car("Mercedes", "White", 2021, 335287);
+    Car car6 = new Car("Audi", "Black", 2020, 230605);
+
+//Placere informationerne i en liste 
+List<string> cars = new List<string>();
+cars.Add(("\n" + car1.model + " " + car1.year + " " + car1.color + " " + car1.price + "kr"));
+cars.Add(("\n" + car2.model + " " + car2.year + " " + car2.color + " " + car2.price + "kr"));
+cars.Add(("\n" + car3.model + " " + car3.year + " " + car3.color + " " + car3.price + "kr"));
+cars.Add(("\n" + car4.model + " " + car4.year + " " + car4.color + " " + car4.price + "kr"));
+cars.Add(("\n" + car5.model + " " + car5.year + " " + car5.color + " " + car5.price + "kr"));
+cars.Add(("\n" + car6.model + " " + car6.year + " " + car6.color + " " + car6.price + "kr"));
+
+
+//How many cars are in the list
+//Console.WriteLine("Count: " + cars.Count);
+
+//Console.WriteLine("Capacity: " + cars.Capacity);
+foreach (string a in cars)
+    Text(a);
+
+Console.ReadLine();
+*/
+
+#endregion
