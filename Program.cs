@@ -1,4 +1,6 @@
-﻿//Main historie
+﻿//Mihnea Branch
+
+//Main historie
 void Text(string text, int time = 1) // change to 50
 {
     foreach (char c in text)
